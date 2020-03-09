@@ -1,0 +1,27 @@
+<ul class="p-0 m-0" role="navigation">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+      {{ if .HasChildren }}
+        <li id="currentPage" class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+          <a  href="#" name="{{ .Name }}" >
+            {{ .Pre }}
+            <span>{{ .Name }}</span>
+          </a>
+        </li>
+        <ul class="sub-menu" role="navigation">
+          {{ range .Children }}
+          <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+            <a href="{{ .URL }}" name="{{ .Name }}" class=" " style="">{{ .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      {{ else }}
+        <li>
+          <a role="button" href="{{ .URL }}"  onclick="closeMenu()" name="close" class="p-2">
+            {{ .Pre }}
+            <span> {{ .Name }} </span>
+          </a>
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>

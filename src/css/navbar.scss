@@ -1,0 +1,19 @@
+.menu-label{ display:none;visibility:hidden;}
+.navbar{
+  .burger{
+     width: auto;
+  }
+max-height:$spacer*6!important;
+ padding: $spacer!important;
+  background :none;
+  transition: $tr-time;
+  .fatty_title{font-family: sans-serif;visibility:hidden;}
+}
+.navbar:hover{
+  // background :$stripes_000;
+  // transition: $tr-time;
+   .fatty_title{ visibility:visible;}
+   .menu-label{ display:inline-block;visibility:visible;}
+
+}
+ 

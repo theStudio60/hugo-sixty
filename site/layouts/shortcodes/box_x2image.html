@@ -1,0 +1,85 @@
+<style>
+    div.images {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div.images a {
+        flex-grow: 1;
+        object-fit: cover;
+        display: flex;
+    }
+    div.images a img {
+        object-fit: cover;
+        flex-grow: 1;
+    }
+</style>
+<div class="mt-4 mb-4 p-0 container-fluid _box box-style-{{ .Get "style" }}" >
+  <div class="row p-0 m-0  ">
+    <div class="col-12 m-0 p-0  border-bottom border-{{ .Get "style" }}">
+      <h1 class="p-2 font-weight-100">
+        <i class="_icon fa-sm fa fa-{{ .Get "icon" }}"></i>
+        {{ .Get "title" }}
+      </h1>
+    </div>
+  </div>
+  <div class="d-lg-flex d-md-flex d-sm-flex p-0 m-0 {{ .Get "style" }}_lines_xy m-0">
+    <div class="
+     p-2
+     mt-1 my-auto
+     text-xs-left
+     text-sm-left
+     text-md-left
+     text-lg-left
+     text-xl-left
+    ">
+      <p style="" class="font-weight-500 text-uppercase my-auto">
+        {{ .Get "text" }}
+      </p>
+    </div>
+    <div class="
+      p-2
+      my-auto
+      text-xs-center
+      text-sm-left
+      text-md-right
+      text-lg-right
+      text-xl-right
+      ">
+      <a
+        class="bg-transparent"
+        style=""
+        data-src="images/{{ .Get "image_1" }}"
+        data-fancybox="images"
+        data-width="720"
+        data-caption="{{ .Get "text" }}"
+      >
+        <img
+          id=" "
+          width="120px"
+          class="lazyload m-2 p-2 shadow bg-{{ .Get "style" }}-transparent"
+          src="src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+          data-src="images/{{ .Get "image_1" }}"
+          alt="{{ .Get "title" }}"
+          >
+      </a>
+      <a
+        class="bg-transparent "
+        style=""
+        data-src="images/{{ .Get "image_2" }}"
+        data-fancybox="images"
+        data-width="720"
+        data-caption="{{ .Get "text" }}"
+      >
+        <img
+          id=" "
+          width="120px"
+          class="lazyload m-2 p-2 shadow bg-{{ .Get "style" }}-transparent"
+          src="src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+          data-src="images/{{ .Get "image_2" }}"
+          alt="{{ .Get "title" }}"
+          >
+      </a>
+
+    </div>
+  </div>
+</div>

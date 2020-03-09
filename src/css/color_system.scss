@@ -1,0 +1,143 @@
+
+// Color system
+
+
+$alpha:rgba(255,255,255,0);
+$transparent:$alpha;
+
+
+$white:#FFF !default;
+$gray-100:#F9FBE6 !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #969696 !default;
+$gray-700: #495057 !default;
+$gray-800:#231F20 !default;
+$gray-900: #212529 !default;
+$black:#000 !default;
+
+$grays: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+$gray-default:$gray-600;
+$gray-dark:$gray-800;/*rgb(45,45,45);*/
+$gray-light:$gray-100;/*rgb(235,235,235);*/ 
+
+$blue:    #4A5DF7 !default;
+$indigo:  #6610f2 !default;
+$purple:  #BA4AF7 !default;
+$pink:#F74AC6;
+$red:#F74A5C;
+$orange:#F75E4A;//main
+$yellow:#F7F24A;
+$green:#4AF765;
+$teal:    #4AF7BB !default;
+$cyan:    #4ACDF7 !default;
+
+
+$colors: () ;
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-light":       $gray-100,
+    "gray-dark":  $gray-800
+  ),
+  $colors
+);
+
+
+$primary:       $orange !default;
+$secondary:     $gray-default!default;
+$success:       $green !default;
+$info:          $gray-800 !default;
+$warning:       $yellow !default;
+$danger:        $orange !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+
+$primary-color : $orange;
+$secondary-color : $gray-default;
+$brand-primary : $primary-color;
+$brand-secondary : $secondary-color;
+$transparent-color:$alpha;
+$default-color: $light;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "pink":  $pink,
+    "red":  $red,
+    "orange":  $orange,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "default" : $default-color,
+     
+    "white":      $white,
+    "light":      $light,
+    "black":      $black,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+
+// Set a specific jump point for requesting color jumps
+$theme-color-interval:      8% !default;
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold:  150 !default;
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+$yiq-text-dark:             $gray-900 !default;
+$yiq-text-light:            $white !default;
+
+
+
+
+ // gradient
+$vgradient_white_to_transparent:linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1));
+$vgradient_transparent_to_black:linear-gradient(to bottom, $transparent, $gray-dark);
+
+$black_shadow:0px 4px 4px $black;
+$white_shadow:2px 4px 2px white;
+
+$alpha-black-5:rgba(0,0,0,0.5);
+$alpha-black-8:rgba(0,0,0,0.8);
+//$alphabeige:rgba(212,208,183,0.8);
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                   $light !important;
+$body-color:                $dark!important;

@@ -1,0 +1,9 @@
+{{ define "main" }}
+{{ $content_text_color := .Params.content_text_color }}
+{{ $container_lines := .Params.container_lines }}
+<article class="p-0 content text-{{$content_text_color}}  ">
+  <div class="container-fluid m-0" style="padding-top:25vh;" >
+    {{- .Content -}}
+  </div>
+</article>
+{{ end }}

@@ -1,0 +1,36 @@
+#contactFrame,
+.overlay-menu {
+  height: 100%;width:0;
+  //max-width:30vw;
+  max-height: 100vh;
+  margin:0;padding:0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 9999 !important;
+  transition:$tr-time;
+  background-blend-mode:multiply;
+}
+.overlay-menu-top{
+  padding: 0!important;
+}
+.overlay-menu-content {
+  height:auto;
+  text-align: left;
+  a {
+    font-family:$font-family-heading;
+    text-transform:uppercase;
+    display: inline-block;
+    text-decoration: none;
+    color:$gray-100;
+    line-height:1.4em;
+    font-size:1.7em;
+    transition:$tr-time;
+  }
+}
+.overlay-menu-bottom{
+  text-align: center;
+  height: auto;
+}
+ 
+ 
+ 

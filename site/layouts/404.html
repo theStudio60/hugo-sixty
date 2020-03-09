@@ -1,0 +1,26 @@
+{{ define "main" }}
+{{ $container_type := .Params.container_type }}
+{{ $container_color := .Params.container_color }}
+{{ $container_lines := .Params.container_lines }}
+{{ $content_text_color := .Params.content_text_color }}
+<div id="homeContainer" class="container-fluid">
+  <div class="h-100 w-100 p-4">
+    <h1 id="" class="text-pink ">
+      <span class="p-0 m-0 _icon  headphones_logotype" id="_headphones_logotype_md">
+      </span>
+      404 Error
+    </h1>
+    <!--
+    <span class="p-0 ml-auto mr-auto mt-3 mb-3   _icon headphones_logotype" id="_headphones_logotype_sm">
+    </span>
+    -->
+   <h3 class="text-uppercase text-light">Page not found</h3>
+
+    <a href="{{ "/" | relURL }}"  class="text-uppercase text-red">
+          <i class="fa fa-2x fa-arrow-left"></i>
+    </a>
+
+  </div>
+
+</div>
+{{ end }}

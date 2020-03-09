@@ -1,0 +1,61 @@
+
+{{ $background_color := .Params.background_color }}
+{{ $container_lines := .Params.container_lines }}
+{{ $container_color := .Params.container_color }}
+{{ $content_text_color := .Params.content_text_color }}
+
+ 
+
+<header>  
+<nav role="navigation" aria-role="navigation" class="navbar navbar-default fixed-top m-0 p-0 " id="navbar">
+  <div class="d-flex justify-content-between  w-100">
+<!--
+    <a  class="mr-auto ml-0 p-2 burger bg-{{$background_color}}  d-block d-xs-none d-sm-none d-md-none 
+    text-{{$container_color}}" onclick="openMenu()" title="Menu" name="menu" id="burger" alt="Menu" role="button">
+      <i class=" p-2 fa fa-lg fa-bars"></i>
+    </a>
+TO FIX !!!!!!!
+
+  -->
+
+    <a class="logo-btn navbar-brand m-0 p-2 bg-{{$container_color}} ml-auto  " title="{{ $.Site.Params.title }}" href="{{ .Site.BaseURL }}" role="button" style="position:absolute;right:0">
+      <img src="{{ with .Site.Params.logo }}{{ . | absURL }}{{ end }}" alt="{{ $.Site.Params.title }}" >
+    </a>
+  </div>
+</nav>
+<script>
+//menu script
+function openMenu() {
+  var burger = document.getElementById("burger");
+  document.getElementById("sm_menu").style.width = "100vw";
+//  document.getElementById("navbar").style.visibility = "hidden";
+  document.getElementById("sm_menu" ).style.visibility = "visible";
+//  document.getElementById("myContainer").style.visibility = "hidden";
+}
+function closeMenu() {
+  document.getElementById("navbar").style.visibility = "visible";
+  document.getElementById("menu").style.width = "0%";
+//  document.getElementById("myContainer").style.visibility = "visible";
+  document.getElementById("menu").style.visibility = "hidden";
+}
+</script>
+<script>
+		function openContactFrame() {
+
+      document.getElementById("contactFrame").style.width = "100%";
+			document.getElementById("contactFrame").style.height = "100%";
+      document.getElementById("navbar").style.visibility = "hidden";
+
+      document.getElementById("contactFrame").style.visibility = "visible";
+      document.getElementById("myContainer").style.visibility = "hidden";
+
+		}
+		function closeContactFrame() {
+      document.getElementById("navbar").style.visibility = "visible";
+
+      document.getElementById("contactFrame").style.width = "0%";
+      document.getElementById("myContainer").style.visibility = "visible";
+      document.getElementById("contactFrame").style.visibility = "hidden";
+  }
+</script>
+</header>

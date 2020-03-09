@@ -1,0 +1,182 @@
+/*//
+// GFX
+//
+1:Images
+2:Icons
+3:Lines
+4:Animation & Effects
+5:UI/UX
+6:Hugo Custom Style
+//
+//
+////*/
+
+/*//
+1:Images
+////*/
+
+$cover:url( /images/bg-img-01.png);
+
+/*//
+2:Icons
+////*/
+
+$burger_icon_FF0030:url(/icons/burger-icon_FF0030.svg);
+$burger_icon_FFFFFF:url(/icons/burger-icon_FFFFFF.svg);
+$burger_icon_971820:url(/icons/burger-icon_971820.svg);
+
+$arrw-dwn_icon_FF0030:url(/icons/godown-icon_FF0030_96x96.svg);
+
+$close_icon_971820:url(/icons/close-icon_D4D0B7_18x18.svg);
+$close_icon_FFFFFF:url(/icons/close-icon_FFFFFF_18x18.svg);
+
+
+$headphones_logotype:url(/img/headphone-FFFFFF-48x48-main_title.png);
+
+._icon {
+  display: inline-block;
+  background-size: cover;
+}
+.burger_icon_ {
+  height:24px;width:24px;
+  background-image:$burger_icon_FF0030;
+}
+.burger_icon_:hover{background-image: $burger_icon_971820;}
+.burger_icon_:focus {background-image: $burger_icon_FFFFFF;}
+
+
+.arrw-dwn_icon_ {
+  height:24px;width:24px;
+  background-image:$arrw-dwn_icon_FF0030;
+}
+
+
+.close_icon_ {
+  height:18px;width:18px;
+  background-image:$close_icon_FFFFFF;
+}
+.close_icon_:hover,.close_icon_:focus{background-image:$close_icon_971820;}
+
+.headphones_logotype {
+  height:48px;width:48px;
+  background-image:$headphones_logotype;
+}
+
+/*//
+3:Lines
+////*/
+
+$stripes_000:url( /img/stripes_000.png);        //black
+$stripes_FFF:url( /img/stripes_FFF.png);        //white
+
+
+.black_lines_x,.black_lines_y,.black_lines_xy{
+  background-image: $stripes_000;
+}
+.default_lines_x,
+.black_lines_x{background-repeat: repeat-x;}
+.default_lines_y,
+.black_lines_y{background-repeat: repeat-y;}
+.default_lines_xy,
+.black_lines_xy{background-repeat: repeat-x repeat-y;}
+
+.white_lines_x,.white_lines_y,.white_lines_xy{
+  background-image: $stripes_FFF;
+}
+.white_lines_x{background-repeat: repeat-x;}
+.white_lines_y{background-repeat: repeat-y;}
+.white_lines_xy{background-repeat: repeat-x repeat-y;}
+.white_striped_square_to_repeat{background-image: $stripes_FFF;}
+
+///4:Animation & Effects
+//transition time
+$tr-time:0.5s;
+$animated-text-fill:url( /img/animated_text_fill.png);
+  @-webkit-keyframes aitf {
+  	0% { background-position: 0% 50%; }
+  	100% { background-position: 100% 50%; }
+  }
+/*//
+5:UI/UX
+////*/
+.alpha-btn{background: transparent;background-color: transparent;border:none;}
+
+/*//
+6:Hugo Custom Style
+////*/
+
+.text-primary{color:$orange;}
+.text-secondary{color:$gray-default;}
+ 
+.text-default {color:$default-color;}
+
+//background-color
+.bg-transparent{background-color:$transparent;}
+
+.bg-,
+.bg-black{background-color:rgba(0,0,0,1);}
+.bg-white{background-color:rgba(255,255,255,1);}
+
+
+.bg-dark,.bg-gray-dark{background-color:rgba(32,32,32,1);}
+
+.bg-default,
+
+.bg-gray-light,.bg-light{background-color:rgba(217,210,204,1);}
+.bg-gray{background-color:$gray-default;}
+
+
+.style-transparent{
+  border-width: 1px;
+  background : rgba(0,0,0,0);
+}
+._box{border-radius:4px; font-size: 16px;}
+._box_image_container{
+  width:100%;
+  text-align:center;
+  overflow:hidden;
+}
+._box_image{}
+._box_image:focus{}
+
+.style-,
+.style-default,
+.style-dark,
+.my-container-,
+.my-container-dark,
+.my-container-default,
+.box-style-,
+.box-style-default,
+.box-style-dark{
+  background-color:rgba(0,0,0,0.7);
+  h1{color: $orange;}
+  p{color: $light;}
+}
+.my-container-light,.box-style-light,.style-light{ h1{color: $primary;}  p{color: $dark;}  background-color:rgba(217,210,204,0.95);}
+.my-container-white,.box-style-white,.style-white{h1{color: $primary;}p{color: $dark;}background-color:rgba(255,255,255,0.9);}
+.my-container-black,.box-style-black,.style-black{h1{color: $primary;}p{color: $light;}background-color:rgba(0,0,0,1);}
+//.my-container-pink,.box-style-pink,.style-pink{h1{color: $white;}p{color: $white;}background-color:rgba(255,0,48,0.7);}
+//.my-container-red,.box-style-red,.style-red{h1{color: $light;}p{color: $light;} background-color:rgba(145,20,37,0.8);}
+#specialImage{
+  display: inline-block;
+   min-width:20%;
+}
+#specialImage img{
+  height: 288px;
+  min-width: 30%;
+ object-fit:contain;
+}
+.preloader {
+  align-items: center;
+  background:#000000;
+  background-image: $stripes_FFF;background-repeat: repeat-x repeat-y;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: opacity 0.3s linear;
+  width: 100%;
+  z-index: 9999;
+}

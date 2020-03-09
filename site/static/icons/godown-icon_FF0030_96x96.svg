@@ -1,0 +1,11 @@
+<svg width="96px" height="96px" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <polygon id="path-1" points="90.9569333 41.4693878 96 46.3020408 96 53.6816327 51.8618079 96 44.1609087 96 0 53.6816327 0 46.3020408 5.04306673 41.4693878 12.834832 41.5564626 38.9133933 67.7877551 38.9133933 5.2244898 44.3653573 0 51.6346427 0 57.0866067 5.2244898 57.0866067 67.7877551 83.165168 41.5564626"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="arrw-dwn_FF0030" fill="#FF0030" fill-rule="nonzero" xlink:href="#path-1"></use>
+    </g>
+</svg>
