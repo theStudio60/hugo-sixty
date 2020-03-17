@@ -1,0 +1,63 @@
+#contactFrame,
+.overlay-menu {
+  height:100%;width:0;
+  //max-width:30vw;
+  max-height: 100vh;
+  margin:0;padding:0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 9999 !important;
+  transition:$tr-time;
+  background-blend-mode:multiply;
+}
+.overlay-menu-top{
+  padding: 0!important;
+}
+.menu-left-large,
+.overlay-menu-content
+{
+ width:25vw;
+ min-width:360px;
+ 
+ position:absolute;
+left:0;
+  height:auto;
+  text-align: left;
+  
+  a 
+  {
+    font-family:$font-family-heading;
+    text-transform:uppercase;
+    display: inline-block;
+    text-decoration: none;
+    color:$gray-100;
+    line-height:1.4em;
+    font-size:1.7em;
+    transition:$tr-time;
+  }
+  
+  a:hover, 
+  a:focus, 
+  a.is-active 
+  {
+    font-family:$font-family-heading;
+    text-transform:uppercase;
+    display: inline-block;
+    text-decoration: none;
+    color:$gray-900;
+    line-height:1.4em;
+    font-size:1.7em;
+    transition:$tr-time;
+  }
+  .menu-left-large-bottom
+  {
+    position:absolute;
+    bottom:-15vh;
+    text-align: center;
+    height: auto;
+  }
+  
+}
+ 
+ 
+ 
