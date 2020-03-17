@@ -116,7 +116,7 @@
 <section aria-role="article" role="article" id="mainSection"  style="background-image:url('/images/{{ $background_image }}');" class="bg-{{$background_color}}" >
   {{ partial "menu_large" . }}
 
-  <div class=" {{ $container_lines }}_lines_xy my-container-{{ $container_type }} container-fluid bg-{{ $container_color }}"  id="myContainer">
+  <div class="p-0 {{ $container_lines }}_lines_xy my-container-{{ $container_type }} container-fluid bg-{{ $container_color }}"  id="myContainer">
     {{- block "main" . }}{{- end }}
   </div>
 </section>
