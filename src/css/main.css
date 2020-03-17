@@ -1,5 +1,4 @@
 @import "color_system";
-
 @import "typography_system";
 @import "geometry_system";
 @import "custom_variables";
@@ -8,7 +7,6 @@
 @import "fancybox";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "font-awesome";
-
 
 *{ box-sizing: border-box; list-style:none; scroll-behavior: smooth;}
 
@@ -96,7 +94,7 @@ a:hover {text-decoration: none; color: $dark;transition: $tr-time; }
 .my-container-default,.my-container-right,.my-container-
 {
   height: inherit;width: auto; 
-  margin-right:0; margin-left: 30vw;
+  margin-right:0; margin-left: 360px;
   overflow-y: scroll; overflow-x: hidden;
 }
 @media only screen and (max-width: 768px) {
