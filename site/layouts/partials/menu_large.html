@@ -1,35 +1,20 @@
-<div class="container-fluid  menu-left-large  p-0 m-0  d-none d-xl-block d-lg-block d-md-block" style="">
-  <div class="d-flex-row row">
-    <div class=" text-center m-auto p-4"  >
-      <a
-          class="bg-light  rounded-circle mr-auto ml-auto mt-4 mb-4 p-2 "
-          style=""
-          data-src="images/user.png"
-          data-fancybox="images"
-          data-width="720"
-          data-caption=""
-        >
+<div class="menu-left-large d-none d-xl-block d-lg-block d-md-block " style="">
+  <div class=" row d-flex-row ">
+    <div class=" text-center ml-auto mr-auto mt-auto mb-auto p-4" >
+ 
           <img
             id=" "
-            width="180px"
-            height="180px"
+            width="240px"
+            height="240px"
             class="lazyload rounded-circle z-depth-1 shadow"
             src="src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-            data-src="images/user.png"
-            alt=" "
-            >
-      </a>
+            data-src="https://source.unsplash.com/random"
+          />
+  
     </div>
-    <div class=" text-left mt-2 mb-2 ml-2 mr-auto p-4 "  >
-      {{ partial "navmenu" . }}
-    </div>
-
-  </div>
-  <hr class="mt-2 mb-2 p-4 bg-light">
-
-  <div class="row">
-
-    <div class=" mt-2 mb-2 ml-2 mr-auto p-4"  >
+    <div class=" text-left mt-2 mb-2 ml-2 ml-auto p-4"  >
+      {{ partial "navmenu"  . }}
+ <br>
       {{ partial "navmenu_social" . }}
     </div>
 
